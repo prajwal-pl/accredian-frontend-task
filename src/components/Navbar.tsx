@@ -9,11 +9,11 @@ type Props = {};
 const Navbar = (props: Props) => {
   return (
     <div>
-      <div className="text-center w-full bg-blue-100 text-sm py-2 font-medium">
+      <div className="text-center w-full bg-blue-50 text-sm py-2 font-medium">
         Navigate your ideal career path with tailored advice{"  "}
         <span className="text-blue-500">Contact Expert</span>
       </div>
-      <div className="flex items-center justify-between mx-auto max-w-7xl py-3 px-4 sm:px-6 lg:px-8">
+      <div className="flex items-center justify-between mx-auto max-w-6xl py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex gap-4 items-center ">
           <Link to="/">
             <h1 className=" text-2xl font-bold text-blue-500">accredian</h1>
@@ -47,7 +47,7 @@ const Navbar = (props: Props) => {
         </div>
       </div>
       <div>
-        <div className="mx-auto bg-blue-100 p-3 rounded-full px-6 my-6 flex items-center gap-3 justify-evenly max-w-[797px]">
+        <div className="mx-auto bg-blue-50 p-3 rounded-full px-6 my-6 flex items-center gap-3 justify-evenly max-w-[797px]">
           {Navlinks.map((link) => (
             <Link
               className={clsx("font-medium", { "text-blue-500": link.active })}
