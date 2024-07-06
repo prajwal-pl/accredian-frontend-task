@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import HeroCard from "@/components/HeroCard";
 import Refer from "@/components/Refer";
+import ReferalBenefits from "@/components/ReferalBenefits";
 
 type Props = {};
 
@@ -11,6 +12,7 @@ const ReferPage = (props: Props) => {
       <Navbar />
       <HeroCard />
       <Refer />
+      <ReferalBenefits />
     </div>
   );
 };

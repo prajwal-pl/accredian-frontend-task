@@ -1,8 +1,9 @@
 import { ChevronDown } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navlinks } from "../../@/lib/utils";
+
 import clsx from "clsx";
+import { Navlinks } from "@/lib/utils";
 
 type Props = {};
 
