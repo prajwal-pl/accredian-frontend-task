@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroCard from "@/components/HeroCard";
 import Refer from "@/components/Refer";
 import ReferalBenefits from "@/components/ReferalBenefits";
+import FAQ from "@/components/FAQ";
 
 type Props = {};
 
@@ -13,6 +14,7 @@ const ReferPage = (props: Props) => {
       <HeroCard />
       <Refer />
       <ReferalBenefits />
+      <FAQ />
     </div>
   );
 };

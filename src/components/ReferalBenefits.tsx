@@ -75,6 +75,11 @@ function ReferalBenefits({}: Props) {
           <ChevronDown size={20} />
         </button>
       </div>
+      <div>
+        <button className="btn bg-blue-500 text-white border-none max-w-[150px] w-full my-12 flex mx-auto">
+          Refer Now
+        </button>
+      </div>
     </div>
   );
 }
