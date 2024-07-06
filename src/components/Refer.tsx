@@ -1,5 +1,6 @@
 import React from "react";
 import referImage from "../../public/Figma-accredian.png";
+import ReferalModal from "./ReferalModal";
 
 type Props = {};
 
@@ -16,9 +17,17 @@ const Refer = (props: Props) => {
         width={800}
         height={500}
       />
-      <button className="btn bg-blue-500 text-white border-none max-w-[150px] w-full my-12 flex mx-auto">
+      <button
+        onClick={() =>
+          (
+            document.getElementById("my_modal_1") as HTMLDialogElement
+          ).showModal()
+        }
+        className="btn bg-blue-500 text-white border-none max-w-[150px] w-full my-12 flex mx-auto"
+      >
         Refer Now
       </button>
+      <ReferalModal id="my_modal_1" />
     </div>
   );
 };

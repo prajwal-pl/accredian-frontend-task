@@ -2,6 +2,7 @@ import { ProgramRows, Programs } from "@/lib/utils";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import programPic from "/programPic.png";
 import { Link } from "react-router-dom";
+import ReferalModal from "./ReferalModal";
 
 type Props = {};
 
@@ -76,9 +77,17 @@ function ReferalBenefits({}: Props) {
         </button>
       </div>
       <div>
-        <button className="btn bg-blue-500 text-white border-none max-w-[150px] w-full my-12 flex mx-auto">
+        <button
+          onClick={() =>
+            (
+              document.getElementById("my_modal_1") as HTMLDialogElement
+            ).showModal()
+          }
+          className="btn bg-blue-500 text-white border-none max-w-[150px] w-full my-12 flex mx-auto"
+        >
           Refer Now
         </button>
+        <ReferalModal id="my_modal_1" />
       </div>
     </div>
   );

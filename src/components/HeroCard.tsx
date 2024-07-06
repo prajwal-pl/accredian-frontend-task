@@ -1,4 +1,6 @@
+import { useState } from "react";
 import heroImage from "../../public/hero-image.png";
+import ReferalModal from "./ReferalModal";
 type Props = {};
 
 const HeroCard = (props: Props) => {
@@ -17,9 +19,17 @@ const HeroCard = (props: Props) => {
               Rs. 15000
             </span>
           </p>
-          <button className="btn bg-blue-500 text-white border-none max-w-[150px]">
+          <button
+            onClick={() =>
+              (
+                document.getElementById("my_modal_1") as HTMLDialogElement
+              ).showModal()
+            }
+            className="btn bg-blue-500 text-white border-none max-w-[150px]"
+          >
             Refer Now
           </button>
+          <ReferalModal id="my_modal_1" />
         </div>
         <div>
           <img
