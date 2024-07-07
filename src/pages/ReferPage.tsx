@@ -13,7 +13,9 @@ const ReferPage = (props: Props) => {
     <div className="max-h-full max-w-full overflow-y-auto">
       <Navbar />
       <HeroCard />
-      <Refer />
+      <div className="hidden md:block">
+        <Refer />
+      </div>
       <ReferalBenefits />
       <FAQ />
       <Footer />

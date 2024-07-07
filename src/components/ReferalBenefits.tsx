@@ -20,7 +20,7 @@ function ReferalBenefits({}: Props) {
           defaultChecked
         />
       </div>
-      <div className="max-w-6xl mx-auto flex justify-center gap-12 w-full">
+      <div className="max-w-6xl mx-auto flex-col md:flex-row flex justify-center gap-12 w-full">
         <div className="card bg-white shadow-xl h-[510px] w-[270px]">
           <div className="">
             {Programs.map((program) => (
@@ -38,7 +38,7 @@ function ReferalBenefits({}: Props) {
           </div>
         </div>
         <div>
-          <div className="card w-[800px] h-[495px] bg-blue-300 shadow-xl">
+          <div className="card md:w-[800px] md:h-[495px] w-[475px] h-[300px] bg-blue-300 shadow-xl">
             <div className="overflow-x-auto rounded-xl">
               <table className="table rounded-xl">
                 {/* head */}

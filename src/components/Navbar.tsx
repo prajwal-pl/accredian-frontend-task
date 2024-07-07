@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, MenuIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,7 @@ const Navbar = (props: Props) => {
             <ChevronDown className="shrink-0" />
           </button>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="md:flex items-center gap-4 hidden md:visible">
           <div className="flex gap-4 items-center ">
             <Link className="font-medium" to={"#"}>
               Refer & Earn
@@ -45,6 +45,49 @@ const Navbar = (props: Props) => {
           <button className="flex items-center bg-blue-500 py-2 px-4 justify-center text-white rounded-lg">
             Try For Free
           </button>
+        </div>
+        <div>
+          <div className="drawer drawer-end">
+            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label
+                htmlFor="my-drawer-4"
+                className="drawer-button cursor-pointer"
+              >
+                <MenuIcon className="md:hidden" />
+              </label>
+            </div>
+            <div className="drawer-side z-[1000]">
+              <label
+                htmlFor="my-drawer-4"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu bg-white space-y-4 text-base-content min-h-full w-80 p-4">
+                {/* Sidebar content here */}
+                <li className="z-10">
+                  <a>Refer & Earn</a>
+                </li>
+                <li>
+                  <a>Resources</a>
+                </li>
+                <li>
+                  <a>About Us</a>
+                </li>
+                <li>
+                  <button className="px-4 py-2 bg-gray-200 text-black rounded-lg font-medium">
+                    Login
+                  </button>
+                </li>
+                <li>
+                  <button className="flex items-center bg-blue-500 py-2 px-4 justify-center text-white rounded-lg">
+                    Try For Free
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div>
