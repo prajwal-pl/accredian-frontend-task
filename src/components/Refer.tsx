@@ -1,10 +1,7 @@
-import React from "react";
 import referImage from "../../public/Figma-accredian.png";
 import ReferalModal from "./ReferalModal";
 
-type Props = {};
-
-const Refer = (props: Props) => {
+const Refer = () => {
   return (
     <div className="h-[600px] bg-blue-50">
       <h1 className="font-semibold text-2xl text-center py-12">

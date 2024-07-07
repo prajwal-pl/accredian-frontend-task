@@ -15,10 +15,10 @@ const ReferalModal = ({ id }: Props) => {
     fromMail: "",
     body: "",
   });
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    const res = axios
+    await axios
       .post("http://localhost:8000/api/sendMail", input)
       .then(() => {
         setInput({

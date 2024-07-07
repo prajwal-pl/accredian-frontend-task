@@ -1,21 +1,15 @@
 import { Programs } from "@/lib/utils";
 import {
-  Facebook,
-  FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
   LucideFacebook,
   Plus,
-  Twitter,
   TwitterIcon,
   YoutubeIcon,
 } from "lucide-react";
-import React from "react";
 import { Link } from "react-router-dom";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className="bg-[#282828]">
       <div className="max-w-5xl mx-auto text-white">

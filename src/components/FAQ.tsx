@@ -1,8 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import supportImage from "/support.png";
-type Props = {};
 
-const FAQ = (props: Props) => {
+const FAQ = () => {
   return (
     <div className="max-w-6xl mx-auto">
       <h1 className="font-semibold text-2xl text-center py-12">

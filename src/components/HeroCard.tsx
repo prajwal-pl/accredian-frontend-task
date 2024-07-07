@@ -1,9 +1,7 @@
-import { useState } from "react";
 import heroImage from "../../public/hero-image.png";
 import ReferalModal from "./ReferalModal";
-type Props = {};
 
-const HeroCard = (props: Props) => {
+const HeroCard = () => {
   return (
     <div className="card max-w-6xl mx-auto bg-blue-50 h-[600px] w-full shadow-xl mb-12 z-[0]">
       <div className="card-body flex flex-row justify-between">

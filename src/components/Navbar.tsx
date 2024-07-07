@@ -1,13 +1,10 @@
 import { ChevronDown, MenuIcon } from "lucide-react";
-import React from "react";
 import { Link } from "react-router-dom";
 
 import clsx from "clsx";
 import { Navlinks } from "@/lib/utils";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div>
       <div className="text-center w-full bg-blue-50 text-sm py-2 font-medium">
