@@ -20,7 +20,7 @@ const ReferalModal = ({ id }: Props) => {
     setLoading(true);
     await axios
       .post(
-        "https://accredian-backend-task-4-56ad.onrender.com/api/sendMail",
+        "https://accredian-backend-task-10.onrender.com/api/sendMail",
         input
       )
       .then(() => {
